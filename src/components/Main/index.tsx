@@ -1,13 +1,15 @@
 import * as S from './styles';
 import Image from 'next/image';
 
-import logo from '~/assets/images/logo.svg';
-import illustration from '~/assets/images/hero-illustration.svg';
-
 export default function Main() {
   return (
     <S.Wrapper>
-      <Image src={logo} alt="Um átomo e Reacr Avançado escrito ao lado" />
+      <Image
+        width="300"
+        height="66"
+        src="/img/logo.svg"
+        alt="Um átomo e React Avançado escrito ao lado"
+      />
 
       <S.Title>React avançado</S.Title>
 
@@ -16,7 +18,9 @@ export default function Main() {
       </S.Description>
 
       <S.Illustration
-        src={illustration}
+        width="344"
+        height="300"
+        src="/img/hero-illustration.svg"
         alt="Ilustração de um homem sentado em frente a um computador escrevendo códigos computacionais"
       />
     </S.Wrapper>
