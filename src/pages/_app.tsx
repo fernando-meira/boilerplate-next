@@ -9,6 +9,7 @@ function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Boilerplate Next.js</title>
 
+        <meta name="theme-color" content="#202020" />
         <meta
           name="description"
           content="A simple project started to work with TypeScript, React, Next.js and Styled Components"
