@@ -1,7 +1,10 @@
 import * as S from './styles';
 import Image from 'next/image';
 
-export default function Main() {
+export default function Main({
+  title = 'React avançado',
+  description = 'TypeScript, ReactJS, Next.js e Styled Components',
+}) {
   return (
     <S.Wrapper>
       <Image
@@ -11,11 +14,9 @@ export default function Main() {
         alt="Um átomo e React Avançado escrito ao lado"
       />
 
-      <S.Title>React avançado</S.Title>
+      <S.Title>{title}</S.Title>
 
-      <S.Description>
-        TypeScript, ReactJS, Next.js e Styled Components
-      </S.Description>
+      <S.Description>{description}</S.Description>
 
       <S.Illustration
         width="344"

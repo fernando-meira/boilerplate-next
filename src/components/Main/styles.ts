@@ -12,6 +12,7 @@ export const Wrapper = styled.main`
   justify-content: center;
 
   color: #fff;
+  text-align: center;
   background-color: #06092b;
 `;
 
