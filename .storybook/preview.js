@@ -1,7 +1,6 @@
-import { addDecorator } from '@storybook/react';
 import * as NextImage from "next/image";
 
-import withGlobalStyles from './withGlobalStyles';
+import GlobalStyles from '../src/styles/global'
 
 const OriginalNextImage = NextImage.default;
 
@@ -25,4 +24,12 @@ export const parameters = {
   },
 }
 
-addDecorator(withGlobalStyles)
+export const decorators = [
+  (Story) => (
+    <>
+      <Story />
+
+      <GlobalStyles />
+    </>
+  ),
+];
